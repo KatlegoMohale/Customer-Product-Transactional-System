@@ -1,0 +1,60 @@
+*{
+    font-family: 'Arial Narrow';
+}
+
+.MenuBox {
+    box-shadow: -9px 8px 33px -4px rgba(0,61,94,0.95);
+    text-align: left;
+    position: center;
+    width: 50%;
+    height: 30%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    float:center;
+    background:#F0F7FA;
+    border-radius: 25px;
+    border: 2px solid #006C94;
+    overflow:hidden;
+    transition: transform .2s;
+}
+
+.label{
+    padding: 3px;
+    break-after: left;
+    display: block;
+}
+
+.button{
+    display: block;
+    margin: 3px;
+}
+
+.MenuBox table {
+    width:75%;
+    margin-left:10px; 
+    margin-right:10px;
+    padding: 5%;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: rgba(117, 207, 255, 0.95);
+}
+
+.rows{
+    width: 20px;
+    background: rgba(200, 236, 255, 0.95);
+}
+
+.rows:hover{
+    background: red !important;
+    color: #000 !important;
+    cursor: pointer !important;
+}
+
+.MenuBox:hover{
+    animation: onhover;
+    transform: scale(1.1);
+}
+
+

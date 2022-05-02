@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>My Little Coffee Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body onload="onLoad();" text="#006C94">
+    <div class="MenuBox">
+        <div class="menu" id="customer">
+            <h4>Customer</h4>
+            <label class="label" >First Name:
+                <input type="text" id="cname"/>
+            </label>
+            <label class="label">Last Name:
+                <input type="text" id="csurname"/>
+            </label>  
+            <button name="AddCustomer" onclick="addCustomer();" class="button">Add</button>
+            <table id="cTable">
+                <tr class="heading">
+                    <td>Last Name</td>
+                    <td>First Name</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="MenuBox">
+        <div class="menu" id="product">
+            <h4>Product</h4>
+            <label class="label">Name:
+                <input type="text" id="pname"/>
+            </label>
+            <label class="label">Price (R):
+                <input type="number" id="pprice"/>
+            </label>
+            <button onclick="addProduct();" class="button">Add</button>
+            <table id=pTable>
+                <tr class="heading">
+                    <td>Name</td>
+                    <td>Price(R)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="MenuBox">
+        <div class="menu" id="transaction">
+            <h4>Transaction</h4>
+            <label class="label">Customer:
+                <select id="sCustomers">
+                </select>
+            </label>
+            <label class="label">Product:
+                <select id="sProducts">
+                </select>
+            </label>
+            <label class="label">Quantity:
+                <input type="number" id="tpQuatity"/>
+            </label>
+            <button onclick="addTransaction();" class="button" >Add</button>
+            <table id="tTable">
+                <tr class="heading">
+                    <td>Customer</td>
+                    <td>Product</td>
+                    <td>Quantity</td>
+                    <td>Price (R)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
